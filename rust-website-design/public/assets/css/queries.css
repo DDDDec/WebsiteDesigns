@@ -11,6 +11,9 @@
     header .phone-navigation {
         display: block;
     }
+    header .background img {
+        width: 275%;
+    }
     main section[aria-label="servers"] .servers {
         grid-template-columns: 1fr;
     }
@@ -26,6 +29,7 @@
     footer .footer .footer-a-1 {
         display: flex;
         justify-content: center;
+        text-align: center;
     }
     footer .footer .footer-a-2 {
         display: flex;
