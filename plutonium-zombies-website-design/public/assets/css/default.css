@@ -1,0 +1,31 @@
+/*
+ *  DEFAULT SCROLL BAR
+ */
+::-webkit-scrollbar {
+    width: 14px;
+}
+::-webkit-scrollbar-thumb {
+    border: 4px solid rgba(0, 0, 0, 0);
+    background-clip: padding-box;
+    border-radius: 9999px;
+    background-color: var(--ac);
+    cursor: pointer;
+}
+
+/*
+ *  DEFAULT PROGRESS BAR
+ */
+progress {
+    border-radius: 7px;
+    width: 100%;
+    height: 22px;
+    box-shadow: 1px 1px 4px rgba( 0, 0, 0, 0.2 );
+}
+::-webkit-progress-bar {
+    background-color: #bdbdbd21;
+    border-radius: 7px;
+}
+::-webkit-progress-value {
+    background-color: var(--ac);
+    border-radius: 7px;
+}

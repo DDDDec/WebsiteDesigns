@@ -1,0 +1,26 @@
+/*
+ *  ROOT STYLING CONFIGURATIONS
+ */
+
+:root {
+    /*
+     *  FONT FAMILY
+     */
+    --ff: "Montserrat", sans-serif;
+
+    /*
+     *  COLOR PALETTE
+     */
+    --tc: white;
+    --otc: #dfdfdf;
+    --ac: #599bfa;
+    --acf: #3b82f612;
+    --bgc: #1f2333;
+    --bgcf: #63636314;
+    --bc: #ffffff25;
+
+    /*
+     *  TRANSITION TIME
+     */
+    --tt: 0.2s;
+}
