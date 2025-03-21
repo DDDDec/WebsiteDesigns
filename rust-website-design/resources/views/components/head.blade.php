@@ -25,3 +25,4 @@
 <link rel="stylesheet" href="{{ asset('assets/css/import.css') }}"/>
 
 <!-- EXTERNAL JAVASCRIPT INCLUDES -->
+<script src="{{ asset('assets/js/navigation.js') }}"></script>

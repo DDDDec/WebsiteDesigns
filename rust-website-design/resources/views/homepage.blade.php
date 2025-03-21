@@ -12,7 +12,7 @@
         <!-- INCLUDE HEADER -->
         @include('components.header')
 
-        <!-- INCLUDE FOOTER -->
+        <!-- INCLUDE HOMEPAGE CONTENT -->
         @include('components.homepage')
 
         <!-- INCLUDE FOOTER -->

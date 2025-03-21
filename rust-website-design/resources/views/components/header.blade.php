@@ -53,6 +53,17 @@
     <!-- PHONE NAVIGATION -->
     <nav class="phone-navigation" aria-label="phone navigation">
         <div class="container">
+            <div class="phone-navigation-grid">
+                <div class="phone-navigation-grid-a-1">
+                    <a><li><i class="fa-solid fa-bars"></i></li></a>
+                </div>
+                <div class="phone-navigation-grid-a-2">
+                    <a><li>Login</li></a>
+                    <a><li>Register</li></a>
+                </div>
+            </div>
+        </div>
+        <div class="phone-navigation-popup">
 
         </div>
     </nav>

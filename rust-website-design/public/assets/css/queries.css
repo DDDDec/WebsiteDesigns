@@ -1,0 +1,34 @@
+@media (max-width: 768px) {
+    .container {
+        width: 100%;
+        padding-left: 15px;
+        padding-right: 15px;
+        box-sizing: border-box;
+    }
+    header .desktop-navigation {
+        display: none;
+    }
+    header .phone-navigation {
+        display: block;
+    }
+    main section[aria-label="servers"] .servers {
+        grid-template-columns: 1fr;
+    }
+    main section[aria-label="statistics"] .statistics {
+        grid-template-columns: 1fr;
+    }
+    main section[aria-label="features"] .features {
+        grid-template-columns: 1fr;
+    }
+    footer .footer {
+        grid-template-columns: 1fr;
+    }
+    footer .footer .footer-a-1 {
+        display: flex;
+        justify-content: center;
+    }
+    footer .footer .footer-a-2 {
+        display: flex;
+        justify-content: center;
+    }
+}

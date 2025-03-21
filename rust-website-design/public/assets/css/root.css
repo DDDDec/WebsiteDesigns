@@ -19,5 +19,8 @@
     --bgcf: #63636314;
     --bc: #ffffff25;
 
+    /*
+     *  TRANSITION TIME
+     */
     --tt: 0.2s;
 }
