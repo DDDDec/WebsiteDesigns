@@ -19,6 +19,8 @@ body {
     max-width: 1200px;
     width: 100%;
     margin: 0 auto;
+    height: 100%;
+    position: relative;
 }
 
 /*
@@ -197,8 +199,6 @@ header .phone-navigation .phone-navigation-popup {
     top: 0;
     z-index: 9999;
     padding-top: 25px;
-}
-header .phone-navigation .phone-navigation-popup {
     display: none;
     color: var(--tc);
     font-weight: 600;
@@ -243,6 +243,19 @@ header .phone-navigation .phone-navigation-popup .navigator-button i {
 }
 header .phone-navigation .phone-navigation-popup .navigator-items {
     display: none;
+}
+header .phone-navigation .phone-navigation-popup .account {
+    width: 100%;
+    padding-bottom: 25px;
+    box-sizing: border-box;
+    position: absolute;
+    bottom: 0;
+}
+header .phone-navigation .phone-navigation-popup .account li {
+    display: block;
+}
+header .phone-navigation .phone-navigation-popup .account a {
+    width: 100%;
 }
 
 /*

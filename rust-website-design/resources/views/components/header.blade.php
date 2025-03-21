@@ -68,7 +68,7 @@
                 <a onClick="navigator();"><li><i class="fa-solid fa-xmark"></i></li></a>
                 &nbsp;&nbsp;&nbsp;{{ config('app.name') }}<br><br>
 
-                <div class="navigator-button">Homepage <i class="fa-solid fa-angle-down"></i></div>
+                <div onClick="homepage();" class="navigator-button">Homepage <i class="fa-solid fa-angle-down"></i></div>
                 <div id="homepage" class="navigator-items">
                     <a><li><i class="fa-solid fa-house"></i> &nbsp;&nbsp;Homepage</li></a>
                     <a><li><i class="fa-solid fa-music"></i> &nbsp;&nbsp;Radio Station</li></a>
@@ -76,7 +76,7 @@
                     <a><li><i class="fa-solid fa-align-justify"></i> &nbsp;&nbsp;Staff Applications</li></a>
                 </div>
 
-                <div class="navigator-button">Community <i class="fa-solid fa-angle-down"></i></div>
+                <div onClick="community();" class="navigator-button">Community <i class="fa-solid fa-angle-down"></i></div>
                 <div id="community" class="navigator-items">
                     <a><li><i class="fa-solid fa-magnifying-glass"></i> &nbsp;&nbsp;Search Players</li></a>
                     <a><li><i class="fa-solid fa-gamepad"></i> &nbsp;&nbsp;Online Players</li></a>
@@ -84,7 +84,7 @@
                     <a><li><i class="fa-solid fa-trophy"></i> &nbsp;&nbsp;Previous Leaderboards</li></a>
                 </div>
 
-                <div class="navigator-button">Support <i class="fa-solid fa-angle-down"></i></div>
+                <div onClick="support();" class="navigator-button">Support <i class="fa-solid fa-angle-down"></i></div>
                 <div id="support" class="navigator-items">
                     <a><li><i class="fa-solid fa-ticket"></i> &nbsp;&nbsp;Open Support Ticket</li></a>
                     <a><li><i class="fa-brands fa-discord"></i> &nbsp;&nbsp;Discord Server</li></a>
@@ -94,6 +94,11 @@
                 </div>
 
                 <div class="navigator-button">Store</div>
+
+                <div class="account">
+                    <a><li>Login</li></a>
+                    <a><li>Register</li></a>
+                </div>
             </div>
         </div>
     </nav>
