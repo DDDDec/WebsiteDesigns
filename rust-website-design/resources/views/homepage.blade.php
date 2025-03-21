@@ -7,7 +7,7 @@
         <!-- TITLE -->
         <title>{{ config('app.name') }} - Homepage</title>
     </head>
-    <body>
+    <body id="body">
 
         <!-- INCLUDE HEADER -->
         @include('components.header')

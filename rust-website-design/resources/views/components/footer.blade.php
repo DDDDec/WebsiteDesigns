@@ -2,7 +2,7 @@
     <div class="container">
         <div class="footer">
             <div class="footer-a-1">
-                &copy; All rights reserved to the owners of rust.clipst.one
+                &copy; All rights reserved to the owners of {{ config('app.url') }}
             </div>
             <div class="footer-a-2">
                 <i class="fa-brands fa-discord"></i>

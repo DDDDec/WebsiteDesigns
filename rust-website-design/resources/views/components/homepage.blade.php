@@ -2,10 +2,10 @@
     <!-- SERVERS SECTION -->
     <section aria-label="servers">
         <div class="title">
-            Clipstone Rust Servers
+            {{ config('app.name') }} Servers
         </div>
         <div class="description">
-            Showcasing online Clipstone Rust servers with players online
+            Showcasing online {{ config('app.name') }} servers with players online
         </div>
         <div class="servers">
             <div class="servers-a-1">
@@ -55,10 +55,10 @@
     <!-- STATISTICS SECTION -->
     <section aria-label="statistics">
         <div class="title">
-            Clipstone Rust Statistics
+            {{ config('app.name') }} Statistics
         </div>
         <div class="description">
-            Showcasing a collection of statistics collected from Clipstone Rust players
+            Showcasing a collection of statistics collected from {{ config('app.name') }} players
         </div>
         <div class="statistics">
             <div class="statistics-a-1">
@@ -99,10 +99,10 @@
     <!-- FEATURES SECTION -->
     <section aria-label="features">
         <div class="title">
-            Clipstone Rust Features
+            {{ config('app.name') }} Features
         </div>
         <div class="description">
-            Showcasing a collection of features Clipstone Rust provides to the players
+            Showcasing a collection of features {{ config('app.name') }} provides to the players
         </div>
         <div class="features">
             <div class="features-a-1">

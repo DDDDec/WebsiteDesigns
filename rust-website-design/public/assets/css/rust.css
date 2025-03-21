@@ -1,16 +1,15 @@
 /*
  *  BODY STYLING
  */
-html {
-    height: 100%;
-}
 body {
     padding: 0;
     margin: 0;
     background: var(--bgc);
     font-family: var(--ff);
-    height: 100%;
     overflow-x: hidden;
+}
+#body {
+    overflow-y: scroll;
 }
 
 /*
@@ -197,8 +196,54 @@ header .phone-navigation .phone-navigation-popup {
     position: absolute;
     top: 0;
     z-index: 9999;
+    padding-top: 25px;
 }
+header .phone-navigation .phone-navigation-popup {
+    display: none;
+    color: var(--tc);
+    font-weight: 600;
+}
+header .phone-navigation .phone-navigation-popup i {
 
+}
+header .phone-navigation .phone-navigation-popup a {
+
+}
+header .phone-navigation .phone-navigation-popup li {
+    list-style-type: none;
+    padding: 15px 20px 15px 20px;
+    color: var(--tc);
+    transition: var(--tt);
+    border-radius: 10px;
+    display: inline-block;
+}
+header .phone-navigation .phone-navigation-popup li:hover {
+    color: var(--ac);
+    background: var(--acf);
+    cursor: pointer;
+}
+header .phone-navigation .phone-navigation-popup .navigator-button {
+    padding: 15px 20px 15px 20px;
+    color: var(--tc);
+    transition: var(--tt);
+    border-radius: 10px;
+    display: inline-block;
+    width: 100%;
+    box-sizing: border-box;
+}
+header .phone-navigation .phone-navigation-popup .navigator-button:hover {
+    color: var(--ac);
+    background: var(--acf);
+    cursor: pointer;
+}
+header .phone-navigation .phone-navigation-popup .navigator-button i {
+    display: flex;
+    justify-content: end;
+    margin-top: -17.5px;
+}
+header .phone-navigation .phone-navigation-popup .navigator-items {
+    display: none;
+}
 
 /*
  *  HEADER BACKGROUND

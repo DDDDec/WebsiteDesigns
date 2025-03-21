@@ -55,7 +55,7 @@
         <div class="container">
             <div class="phone-navigation-grid">
                 <div class="phone-navigation-grid-a-1">
-                    <a><li><i class="fa-solid fa-bars"></i></li></a>
+                    <a onClick="navigator();"><li><i class="fa-solid fa-bars"></i></li></a>
                 </div>
                 <div class="phone-navigation-grid-a-2">
                     <a><li>Login</li></a>
@@ -63,8 +63,38 @@
                 </div>
             </div>
         </div>
-        <div class="phone-navigation-popup">
+        <div id="phone-navigation-popup" class="phone-navigation-popup">
+            <div class="container">
+                <a onClick="navigator();"><li><i class="fa-solid fa-xmark"></i></li></a>
+                &nbsp;&nbsp;&nbsp;{{ config('app.name') }}<br><br>
 
+                <div class="navigator-button">Homepage <i class="fa-solid fa-angle-down"></i></div>
+                <div id="homepage" class="navigator-items">
+                    <a><li><i class="fa-solid fa-house"></i> &nbsp;&nbsp;Homepage</li></a>
+                    <a><li><i class="fa-solid fa-music"></i> &nbsp;&nbsp;Radio Station</li></a>
+                    <a><li><i class="fa-solid fa-address-card"></i> &nbsp;&nbsp;Staff Members</li></a>
+                    <a><li><i class="fa-solid fa-align-justify"></i> &nbsp;&nbsp;Staff Applications</li></a>
+                </div>
+
+                <div class="navigator-button">Community <i class="fa-solid fa-angle-down"></i></div>
+                <div id="community" class="navigator-items">
+                    <a><li><i class="fa-solid fa-magnifying-glass"></i> &nbsp;&nbsp;Search Players</li></a>
+                    <a><li><i class="fa-solid fa-gamepad"></i> &nbsp;&nbsp;Online Players</li></a>
+                    <a><li><i class="fa-solid fa-trophy"></i> &nbsp;&nbsp;Current Leaderboard</li></a>
+                    <a><li><i class="fa-solid fa-trophy"></i> &nbsp;&nbsp;Previous Leaderboards</li></a>
+                </div>
+
+                <div class="navigator-button">Support <i class="fa-solid fa-angle-down"></i></div>
+                <div id="support" class="navigator-items">
+                    <a><li><i class="fa-solid fa-ticket"></i> &nbsp;&nbsp;Open Support Ticket</li></a>
+                    <a><li><i class="fa-brands fa-discord"></i> &nbsp;&nbsp;Discord Server</li></a>
+                    <a><li><i class="fa-brands fa-twitter"></i> &nbsp;&nbsp;Twitter Page</li></a>
+                    <a><li><i class="fa-brands fa-facebook-f"></i> &nbsp;&nbsp;Facebook Page</li></a>
+                    <a><li><i class="fa-brands fa-youtube"></i> &nbsp;&nbsp;Youtube Channel</li></a>
+                </div>
+
+                <div class="navigator-button">Store</div>
+            </div>
         </div>
     </nav>
 
@@ -76,8 +106,8 @@
     <!-- HEADER -->
     <div class="container">
         <div class="header">
-            <h1>Clipstone Rust Homepage</h1>
-            <p>Welcome to Clipstone Rust, Where only the bravest of souls venture through <br>the pain of progression only to meet their demise...</p>
+            <h1>{{ config('app.name') }} Homepage</h1>
+            <p>Welcome to {{ config('app.name') }}, Where only the bravest of souls venture through <br>the pain of progression only to meet their demise...</p>
             <div class="playing"><i class="fa-solid fa-circle pulse"></i> 220 players planning raids</div>
         </div>
     </div>
