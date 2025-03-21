@@ -1,11 +1,15 @@
 /*
  *  BODY STYLING
  */
+html {
+    height: 100%;
+}
 body {
     padding: 0;
     margin: 0;
     background: var(--bgc);
     font-family: var(--ff);
+    height: 100%;
 }
 
 /*
@@ -133,7 +137,7 @@ header .background {
     position: absolute;
     top: 0;
     overflow: hidden;
-    z-index: -9999;
+    z-index: -1;
 }
 header .background img {
     -webkit-mask-image:-webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,0)), to(rgba(0,0,0,0))); mask-image: linear-gradient(to bottom, rgba(0,0,0,1), rgba(0,0,0,0));
@@ -177,31 +181,183 @@ header .playing i {
 }
 
 /*
- *  Homepage Servers Section
+ *  HOMEPAGE SERVERS SECTION
  */
-main section .servers {
+main section[aria-label="servers"] {
+    padding-top: 200px;
+}
+main section[aria-label="servers"] .title {
+    color: var(--tc);
+    font-weight: 600;
+    font-size: 18px;
+    padding-bottom: 5px;
+}
+main section[aria-label="servers"] .description {
+    color: var(--otc);
+    padding-bottom: 25px;
+    font-size: 16px;
+}
+main section[aria-label="servers"] .servers {
     width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 25px;
-    padding-top: 200px;
 }
-main section .servers .servers-a-1 {
+main section[aria-label="servers"] .servers .servers-a-1 {
     width: 100%;
     padding: 25px;
     box-sizing: border-box;
     background: var(--bgcf);
     border-radius: 10px;
+    position: relative;
 }
-main section .servers .servers-a-1 .online {
+main section[aria-label="servers"] .servers .servers-a-1 .online {
     color: var(--tc);
     font-weight: 600;
 }
-main section .servers .servers-a-1 .online i {
+main section[aria-label="servers"] .servers .servers-a-1 .online i {
     color: var(--ac);
     font-weight: 600;
     margin-right: 25px;
 }
-main section .servers .servers-a-1 progress {
+main section[aria-label="servers"] .servers .servers-a-1 .progress {
+    width: 100%;
+    position: absolute;
+    margin-top: 28px;
+    text-align: center;
+    box-sizing: border-box;
+    color: var(--tc);
+    font-weight: 600;
+    font-size: 12px;
+    left: 0;
+}
+main section[aria-label="servers"] .servers .servers-a-1 progress {
     margin-top: 25px;
+}
+
+/*
+ *  HOMEPAGE STATISTICS SECTION
+ */
+main section[aria-label="statistics"] {
+    padding-top: 100px;
+}
+main section[aria-label="statistics"] .title {
+    color: var(--tc);
+    font-weight: 600;
+    font-size: 18px;
+    padding-bottom: 5px;
+}
+main section[aria-label="statistics"] .description {
+    color: var(--otc);
+    padding-bottom: 25px;
+    font-size: 16px;
+}
+main section[aria-label="statistics"] .statistics {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 25px;
+}
+main section[aria-label="statistics"] .statistics .statistics-a-1 {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    border: 1px solid var(--bc);
+    border-radius: 10px;
+    position: relative;
+}
+main section[aria-label="statistics"] .statistics .statistics-a-1 .title {
+    color: var(--otc);
+    font-size: 18px;
+    font-weight: normal;
+    text-align: center;
+}
+main section[aria-label="statistics"] .statistics .statistics-a-1 .stat {
+    color: var(--tc);
+    font-size: 24px;
+    font-weight: 600;
+    text-align: center;
+}
+
+/*
+ *  HOMEPAGE FEATURES SECTION
+ */
+main section[aria-label="features"] {
+    padding-top: 100px;
+}
+main section[aria-label="features"] .title {
+    color: var(--tc);
+    font-weight: 600;
+    font-size: 18px;
+    padding-bottom: 5px;
+}
+main section[aria-label="features"] .description {
+    color: var(--otc);
+    padding-bottom: 25px;
+    font-size: 16px;
+}
+main section[aria-label="features"] .features {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 25px;
+}
+main section[aria-label="features"] .features .features-a-1 {
+    width: 100%;
+    padding: 25px;
+    box-sizing: border-box;
+    background: var(--bgcf);
+    border-radius: 10px;
+    color: var(--tc);
+    font-weight: 600;
+}
+main section[aria-label="features"] .features .features-a-1 i {
+    padding: 15px;
+    border-radius: 10px;
+    background: var(--ac);
+    color: var(--tc);
+    margin-right: 15px;
+}
+main section[aria-label="features"] .features .features-a-1 .description {
+    padding-top: 25px;
+    color: var(--otc)!important;
+    font-weight: normal;
+    padding-bottom: 0px;
+    font-size: 15px;
+}
+
+/*
+ *  FOOTER
+ */
+footer {
+    width: 100%;
+    border-top: 1px solid var(--bc);
+    margin-top: 100px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    position: relative;
+}
+.footer {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+    color: var(--tc);
+}
+.footer .footer-a-1 {
+    padding-top: 17.5px;
+}
+.footer .footer-a-2 {
+    display: flex;
+    justify-content: end;
+}
+.footer i {
+    padding: 15px;
+    border: 2px solid var(--ac);
+    border-radius: 10px;
+    font-size: 20px;
+    margin-left: 10px;
+    transition: 0.2s;
+}
+.footer i:hover {
+    box-shadow: 0px 0px 10px var(--ac);
+    cursor: pointer;
 }

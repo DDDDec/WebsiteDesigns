@@ -67,7 +67,7 @@
         <div class="header">
             <h1>Clipstone Rust Homepage</h1>
             <p>Welcome to Clipstone Rust, Where only the bravest of souls venture through <br>the pain of progression only to meet their demise...</p>
-            <div class="playing"><i class="fa-solid fa-circle pulse"></i> 1,000 players planning raids</div>
+            <div class="playing"><i class="fa-solid fa-circle pulse"></i> 220 players planning raids</div>
         </div>
     </div>
 </header>
