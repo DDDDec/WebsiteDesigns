@@ -3,6 +3,3 @@
 
 # Previews
 All previews are in the main directory of the repo!
-
-# Discord Server
-https://discord.gg/Uc7MW3FSNX
