@@ -1,0 +1,68 @@
+.left {
+    float: left;
+}
+.right {
+    float: right;
+}
+.flip {
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+}
+
+.avatar-placeholder {
+    border-radius: var(--border-radius);
+    background-color: var(--accent-color);
+    overflow: hidden;
+    height: 100px;
+    width: 200px;
+    position: relative;
+}
+.avatar-placeholder img {
+    position: absolute;
+    top: -50px;
+    opacity: 0.75;
+}
+
+.avatar {
+    border-radius: var(--border-radius);
+    padding: var(--padding);
+    overflow: hidden;
+    position: relative;
+    height: 100%;
+    width: 25px;
+}
+.avatar img {
+    position: absolute;
+    height: 100px;
+    top: -5px;
+    left: 5px;
+    z-index: 9999;
+    opacity: 1;
+}
+
+.avatar-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    height: 100%;
+    padding: 15px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    z-index: 9999;
+}
+.avatar-grid-a-1 {
+
+}
+
+.circle-menu {
+    width: 100%;
+}
+.circle-menu a {
+    display: inline-block;
+    border-radius: 50%;
+    height: 20px;
+    width: 20px;
+    background-color: var(--accent-color);
+    color: white;
+}

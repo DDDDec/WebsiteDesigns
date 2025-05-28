@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PHPUnit">
+    <option name="directories">
+      <list>
+        <option value="$PROJECT_DIR$/plutonium-zombies-website-design/tests/Unit" />
+        <option value="$PROJECT_DIR$/plutonium-zombies-website-design/tests/Feature" />
+        <option value="$PROJECT_DIR$/rust-website-design/tests/Unit" />
+        <option value="$PROJECT_DIR$/rust-website-design/tests/Feature" />
+        <option value="$PROJECT_DIR$/project-zomboid-website-design/tests/Unit" />
+        <option value="$PROJECT_DIR$/project-zomboid-website-design/tests/Feature" />
+        <option value="$PROJECT_DIR$/plutonium-multiplayer-website-design/tests/Unit" />
+        <option value="$PROJECT_DIR$/plutonium-multiplayer-website-design/tests/Feature" />
+      </list>
+    </option>
+  </component>
+</project>
