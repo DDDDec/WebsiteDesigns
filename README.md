@@ -5,4 +5,7 @@ Dec's repository of designs for my portfolio
 All previews are in the main directory of the repo!
 
 # Discord
-https://discord.com/invite/SKXMmG485u
+https://discord.gg/SKXMmG485u
+
+# Website
+https://zombies.clipst.one
